@@ -1,12 +1,9 @@
-import Link from 'next/link'
+import Layout from '../components/Layout'
 
 export default function about() {
   return (
-    <div>
+    <Layout title='About | Next.js'>
       <h2>About</h2>
-      <Link href='/'>
-        <a>Home</a>
-      </Link>
-    </div>
+    </Layout>
   )
 }

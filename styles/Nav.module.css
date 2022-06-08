@@ -1,0 +1,21 @@
+.nav {
+  border-top: 1px solid rgb(173, 83, 137);
+  border-bottom: 1px solid rgb(173, 83, 137);
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav a {
+  padding: 10px;
+  display: block;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  transition: 0.2s ease all;
+  font-size: 1em;
+}
+
+.nav a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
