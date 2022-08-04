@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Layout from '../../components/Layout'
 
 export default function index({ data }) {
@@ -9,8 +10,11 @@ export default function index({ data }) {
         .filter((d) => d.id <= 20)
         .map((d) => (
           <div key={d.id}>
-            <h3>{d.title}</h3>
-            <p>{d.body}</p>
+            <Link href={`/blog/${d.id}`}>
+              <a>
+                <h3>{d.title}</h3>
+              </a>
+            </Link>
           </div>
         ))}
     </Layout>
